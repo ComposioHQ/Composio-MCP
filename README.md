@@ -1,4 +1,4 @@
-# Composio-MCP
+# Composio MCP
 
 Composio MCP (Model Context Protocol) is a server implementation that provides standardized access to over 250 applications, enabling seamless integration for Agents, Large Language Models (LLMs), and Integrated Development Environments (IDEs). It facilitates structured interactions with tools such as Gmail, Linear, Notion, GitHub, Slack, and more, enhancing automation and reducing errors in AI-driven workflows.
 
@@ -62,4 +62,84 @@ For assistance or inquiries:
 - **Email**: Contact us at support@composio.dev.
 
 For more information, visit the [Composio MCP Landing Page](https://composio.dev/mcp/).
+
+# Composio MCP CLI
+
+A command-line interface (CLI) for configuring Claude, Cursor, and Windsurf with MCP servers.
+
+## Installation
+
+```bash
+# Install globally
+npm install -g composio-mcp-cli
+
+# Or run directly with npx
+npx composio-mcp-cli
+```
+
+## Usage
+
+The CLI provides three commands for configuring different AI clients with MCP servers:
+
+### Claude
+
+Configure Claude desktop with an MCP server:
+
+```bash
+composio claude <url>
+```
+
+This will save the configuration to Claude's configuration file.
+
+### Cursor
+
+Configure Cursor with an MCP server:
+
+```bash
+composio cursor <url>
+```
+
+This will save the configuration to Cursor's configuration file.
+
+### Windsurf
+
+Configure Windsurf with an MCP server:
+
+```bash
+composio windsurf <url>
+```
+
+This will save the configuration to Windsurf's configuration file.
+
+## Examples
+
+```bash
+# Configure Claude with an MCP server
+composio claude https://example.com/mcp
+
+# Configure Cursor with an MCP server
+composio cursor https://example.com/mcp
+
+# Configure Windsurf with an MCP server
+composio windsurf https://example.com/mcp
+```
+
+## Development
+
+This project uses Vite for building the CLI.
+
+```bash
+# Install dependencies
+npm install
+
+# Build the CLI
+npm run build
+
+# Run the CLI locally
+npm start
+```
+
+## License
+
+MIT
 
