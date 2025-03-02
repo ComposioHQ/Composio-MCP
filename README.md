@@ -45,9 +45,28 @@ To get started, ensure you have the following:
         
 - Restart Claude Desktop to apply changes.
 
+## Development
+
+This project uses Vite for building the CLI.
+
+```bash
+# Install dependencies
+pnpm install
+
+# Build the CLI
+pnpm run build
+
+# Run the CLI locally
+pnpm start
+```
+
 ## Contributing
 
 Contributions are welcome! Please refer to the [CONTRIBUTING.md](https://github.com/ComposioHQ/composio-mcp-server/blob/master/CONTRIBUTING.md) file for guidelines on how to contribute.
+
+## Special Thanks
+
+Special thanks to the [Supergateway](https://github.com/supergateway) project for their invaluable contribution to the MCP ecosystem. Their SSE implementation has been instrumental in enabling seamless communication between AI clients and MCP servers.
 
 ## License
 
@@ -68,78 +87,3 @@ For more information, visit the [Composio MCP Landing Page](https://composio.dev
 A command-line interface (CLI) for configuring Claude, Cursor, and Windsurf with MCP servers.
 
 ## Installation
-
-```bash
-# Install globally
-npm install -g composio-mcp-cli
-
-# Or run directly with npx
-npx composio-mcp-cli
-```
-
-## Usage
-
-The CLI provides three commands for configuring different AI clients with MCP servers:
-
-### Claude
-
-Configure Claude desktop with an MCP server:
-
-```bash
-composio claude <url>
-```
-
-This will save the configuration to Claude's configuration file.
-
-### Cursor
-
-Configure Cursor with an MCP server:
-
-```bash
-composio cursor <url>
-```
-
-This will save the configuration to Cursor's configuration file.
-
-### Windsurf
-
-Configure Windsurf with an MCP server:
-
-```bash
-composio windsurf <url>
-```
-
-This will save the configuration to Windsurf's configuration file.
-
-## Examples
-
-```bash
-# Configure Claude with an MCP server
-composio claude https://example.com/mcp
-
-# Configure Cursor with an MCP server
-composio cursor https://example.com/mcp
-
-# Configure Windsurf with an MCP server
-composio windsurf https://example.com/mcp
-```
-
-## Development
-
-This project uses Vite for building the CLI.
-
-```bash
-# Install dependencies
-npm install
-
-# Build the CLI
-npm run build
-
-# Run the CLI locally
-npm start
-```
-
-## License
-
-MIT
-
